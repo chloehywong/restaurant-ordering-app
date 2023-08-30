@@ -1,0 +1,65 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+       <link rel="stylesheet" href="index.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+       
+       <title>Michelin's Diner</title>
+    </head>
+    <body>
+        <header>
+            <div class="Banner-text">
+                <h1>Michelin's Diner</h1>
+                <h3>The best burgers and pizzas in town.</h3>
+            </div>
+        </header>
+        <main>
+            <div class="menu" id="menu">
+                    <!--menu item-->
+            </div>
+            <div class="basket" id="basket">
+                    <!--menu item-->
+            </div>
+            <div class="pop-up" id="pop-up">
+                <div class="content">
+                    <h1 class="pop-up-heading">Enter card details</h1>
+                    <form class="pop-up-input-box" id="payment-form">
+                        <input 
+                            id="name-input"
+                            class="text-box" 
+                            type="text" 
+                            name="cardName" 
+                            pattern="[a-zA-Z][a-zA-Z\s]+"
+                            placeholder="Enter your name" 
+                            required
+                        /><br>
+                        <input 
+                            class="text-box" 
+                            type="tel" 
+                            name="cardNumber" 
+                            pattern="\d*"
+                            maxlength="19"
+                            placeholder="Enter card number"  
+                            required
+                        /><br>
+                        <input 
+                            class="text-box" 
+                            type="tel" 
+                            name="cardVerification" 
+                            pattern="\d*"
+                            maxlength="4" 
+                            placeholder="Enter CVV"
+                            required
+                        /><b></b>
+                        <button type="submit" class="pay-btn" id="pay-btn">Pay</button>
+                    </form>
+                </div>
+            </div>
+            <div class="thanksMsg" id="thanksMsg"></div>
+                <!--thank you message-->
+        </main>
+	    <script src="index.js" type="module"></script>
+    </body>
+</html>
+
